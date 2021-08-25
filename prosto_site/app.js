@@ -24,7 +24,7 @@ function getTemp(titles, res){
         }
     });
 }
-// функция формата и вывода
+// функция формата и вывода, конечная
 function formatHtml(titles, tmp, res){
     htmldata = tmp.replace('$$', titles.titles);
     res.writeHead(200, {'content-type':'text/html'});
